@@ -10,8 +10,8 @@
 <body>
     <header>
         <h1>RioTurismo</h1>
-            <ion-icon name="menu-outline" class="hamburger"></ion-icon>
-        <div class="sub-título"  id="Map">
+        <ion-icon name="menu-outline" class="hamburger"></ion-icon>
+        <div class="sub-título">
             <main>
                 <nav class="">
                     <ul>
@@ -21,22 +21,16 @@
                         <li><a href="empresas.html">Empresas</a></li>
                     </ul>
                 </nav>   
-            </main> 
-            
-           
+            </main>     
         </div> 
     </header>
-
     <section class="content">
             <img src="assets/img/RDC.jpg" width="200px">
             <h2>Rio Da Conceição</h2>
             <p>
                 Um município brasileiro do estado do Tocantins. Localiza-se a uma latitude 11º24'01" sul e a uma longitude 46º53'00" oeste, estando a uma altitude de 496 metros. Sua população estimada em 2010 era de 1714 habitantes. Possui uma área de 761,211 km².
             </p>
-            
- 
-              
-               
+    
         <h2>O que fazer em Rio da Conceição</h2>
         <p>
             Se você gosta de uma boa dose de aventura e deseja apreciar a belezas naturais do Tocantins, Rio da Conceição é o lugar perfeito para você.
@@ -71,35 +65,47 @@
             <a href="atrativos.html">Atrativos.</a>
         </p>
     </section>
+    <section class="formulario">
+        <h2>Informe o CEP</h2>
+        <p>
+            Digite o CEP e ao sair o campo o endereço será completado.
+            Pode utilizar a tecla TAB após digitar o CEP.
+        </p>
+        <form method="get" action=".">
+            <div class="for">
+                <label for="cep">Cep</label></br>
+                    <input type="text" id="cep" value="" size="10" maxlength="9"
+                           onblur="pesquisacep(this.value);" required placeholder="Ex.: 00.000.000">
+            </div>
+            <div class="for">
+                <label for="rua">Rua</label></br>
+                <input type="text" id="rua" size="25">
+            </div>
+            <div class="for">
+                <label for="bairro">Bairro</label></br>
+                <input type="text" id="bairro" size="25">
+            </div>
+            <div class="for">
+                <label for="cidade">Cidade</label></br>
+                <input type="text" id="cidade" size="24">
+            </div>
+            <div class="for">
+                <label for="uf">Estado</label></br>
+                <input type="text" id="uf" size="2">
+            </div>
+            <div class="for">
+                <label for="ibge">IBGE</label></br>
+                <input type="text" id="ibge" size="8">
+            </div>
+          </form>
+    </section>
+    <footer>
+        <p>@2021, Rio da Conceição-To </br>
+            Todos os direitos reservados
+        </p>
+    </footer>
 
-    <form method="get" action=".">
-        <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-               onblur="pesquisacep(this.value);" /></label><br />
-               <small>Ex: 00000-000 </small> </br>
-        <label>Rua:
-        <input name="rua" type="text" id="rua" size="60" /></label><br />
-        <small>Ex: Rua Palmeiras </small></br>
-        <label>Bairro:
-        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-        <small> EX: Centro</small></br>
-        <label>Cidade:
-        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-       <small> Ex: São Paulo</small> </br>
-        <label>Estado:
-        <input name="uf" type="text" id="uf" size="2" /></label><br />
-        <small> Ex: Nordeste</small> </br>
-        <label>IBGE:
-        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
-        <small> 0000000</small> </br>
-      </form>
-
-    <script src="assets/js/script.js"> </script>
-<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-
-
-
-
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
