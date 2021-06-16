@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!-- saved from url=(0536)https://components.mywebsitebuilder.com/extern/facebook-widget-app/facebook-widget-app.html?wzId=id1620872395378&wzInstanceId=id1620872395378&wzAppId=FacebookPagePluginApp&wzAppV=1&wzApiType=app&wzDeviceType=desktop&wzMode=view&widgetType=facebookPagePlugin&url=https%3A%2F%2Fwww.facebook.com%2Fprefderiodaconceicao&showFaces=true&showPosts=true&hideCover=false&width=500&height=614&appId=744137685644053&wzEncodeParams=eyJ3ekN1cnJlbnRVcmwiOiJodHRwOi8vcmlvZGFjb25jZWljYW8udG8uZ292LmJyLyIsInd6U2l6ZSI6eyJ3aWR0aCI6NTAwLCJoZWlnaHQiOjYxNH19 -->
+<html><!--<![endif]--><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    
+    <script src="./sdk.js.download" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./sdk.js(1).download"></script><script src="./jquery.min.js.download"></script>
+    <script src="./apps-api.js.download"></script>
+
+
+    <style>
+        .fb-comments span, .fb-comments iframe, .fb-like-box, .fb-like-box span, .fb-like-box iframe
+        {
+            display: block !important;
+            width: 100% !important;
+        }
+
+        .fb-share-button span
+        {
+            vertical-align: inherit !important;
+        }
+
+    </style>
+
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_new_ui_mobile_overlay_active{overflow:hidden}@keyframes fb_mpn_landing_page_slide_in{0%{border-radius:50%;margin:0 24px;width:60px}40%{border-radius:18px}100%{margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_in_from_left{0%{border-radius:50%;left:12px;margin:0 24px;width:60px}40%{border-radius:18px}100%{left:12px;margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+<body marginwidth="0" marginheight="0" style="zoom: 1;">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12&appId=" + AppsApi.getQueryParamValue('appId');
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script type="text/javascript">
+    (function () {
+        var url = AppsApi.getCurrentUrl();
+        var isExpanded = false;
+        var viewMode = AppsApi.getViewMode();
+        var oldIE;
+        if ($('html').is('.ie6, .ie7, .ie8')) {
+            oldIE = true;
+        }
+
+        var widgetTypeMap = {
+            facebookLike: {
+                "class": "fb-like",
+                params: [{param: "url", attr: "data-href"}, {
+                    param: "layout",
+                    attr: "data-layout"
+                }, {param: "actionType", attr: "data-action"}, {
+                    param: "width",
+                    attr: "data-width"
+                }, {param: "showFaces", attr: "data-show-faces"}]
+            },
+            facebookShare: {
+                "class": "fb-share-button",
+                params: [{param: "url", attr: "data-href"}, {param: "layout", attr: "data-layout"}]
+            },
+            facebookFollow: {
+                "class": "fb-follow",
+                params: [{param: "url", attr: "data-href"}, {
+                    param: "colorScheme",
+                    attr: "data-colorscheme"
+                }, {param: "layout", attr: "data-layout"}, {param: "showFaces", attr: "data-show-faces"}]
+            },
+            facebookComments: {
+                "class": "fb-comments",
+                params: [{param: "url", attr: "data-href"}, {param: "width", attr: "data-width"}, {
+                    param: "postLimit",
+                    attr: "data-numposts"
+                }, {param: "colorScheme", attr: "data-colorscheme"}]
+            },
+            facebookActivityFeed: {
+                "class": "fb-activity",
+                params: [{param: "url", attr: "data-site"}, {param: "width", attr: "data-width"}, {
+                    param: "maxAge",
+                    attr: "data-max-age"
+                }, {param: "colorScheme", attr: "data-colorscheme"}]
+            },
+            facebookLikeBox: {
+                "class": "fb-like-box",
+                params: [{param: "url", attr: "data-href"}, {
+                    param: "colorScheme",
+                    attr: "data-colorscheme"
+                }, {param: "showFaces", attr: "data-show-faces"}, {
+                    param: "showHeader",
+                    attr: "data-header"
+                }, {param: "showPosts", attr: "data-stream"}]
+            },
+            facebookPagePlugin: {
+                "class": "fb-page",
+                params: [{
+                    param: "url",
+                    attr: "data-href"
+                },
+                    {
+                        param: "showFaces",
+                        attr: "data-show-facepile"
+                    },
+                    {
+                        param: "hideCover",
+                        attr: "data-hide-cover"
+                    },
+                    {
+                        param: "showPosts",
+                        attr: "data-show-posts"
+                    },
+                    {
+                        param: "width",
+                        attr: "data-width"
+                    },
+                    {
+                        param: "height",
+                        attr: "data-height"
+                    }]
+            }
+        };
+
+        function parseQueryParams() {
+            var query = window.location.search.substring(1) || '';
+            var queries = query.split('&');
+            var params = {};
+            for (var i = 0; i < queries.length; i++) {
+                var p = queries[i].split('=');
+                if (p.length != 2) continue;
+                params[decodeURIComponent(p[0])] = decodeURIComponent(p[1].replace(/\+/g, " "));
+            }
+            return params;
+        }
+
+        function valueOrDefault(value, defaultValue) {
+            if (value === null || value === undefined) {
+                return defaultValue;
+            }
+            return value;
+        }
+
+
+        var params = parseQueryParams();
+        var widgetType = valueOrDefault(params["widgetType"], undefined);
+
+        var html = '<div';
+        var widgetData = widgetTypeMap[widgetType];
+
+        var attributes = widgetData.params;
+        var layout;
+        switch (widgetType) {
+            case 'facebookLike':
+                layout = params['layout'];
+                var action = params['actionType'];
+                var showFaces = params['showFaces'];
+                if (layout === 'standard') {
+                    if (AppsApi.getDeviceType() === 'mobile') {
+                        params['width'] = 314;
+                    }
+                    else {
+                        params['width'] = 450;
+                    }
+                }
+                if (params['useCustomUrl'] === "false" || params['useCustomUrl'] === undefined) {
+                    params['url'] = url;
+                }
+                var sizeParams = likeButtonSizing(action, layout, showFaces);
+                params['width'] = sizeParams.width;
+                if (viewMode === 'designer') {
+                    AppsApi.setAppSize(sizeParams);
+                }
+                break;
+            case 'facebookShare':
+                layout = params['layout'];
+                if (params['useCustomUrl'] === "false" || params['useCustomUrl'] === undefined) {
+                    params['url'] = url;
+
+                }
+
+                else if (params["url"] && params["url"].indexOf('//') === -1) {
+                    params["url"] = "//" + params["url"]
+                }
+                if (viewMode === 'designer') {
+                    AppsApi.setAppSize(shareButtonSizing(layout));
+                }
+                break;
+            case 'facebookActivityFeed':
+                if (params['useCustomUrl'] === "false" || params['useCustomUrl'] === undefined) {
+                    params['url'] = url;
+                }
+                if (params['limitPostAge'] === "false") {
+                    params['maxAge'] = 0;
+                }
+                AppsApi.addEventListener(AppsApi.Events.SIZE_CHANGE, function (size) {
+                    AppsApi.setSettings('width', size.width);
+                });
+
+                break;
+            case 'facebookComments':
+                params['url'] = url;
+                if (oldIE === true) {
+                    if (params["width"] === "100%" && $(document.body).width() > 0) {
+                        params["width"] = $(document.body).width();
+                    }
+                    else if (params["width"] === "100%") {
+                        params["width"] = 400;
+                    }
+                    AppsApi.addEventListener(AppsApi.Events.SIZE_CHANGE, function (size) {
+                        params["width"] = size.width;
+                        AppsApi.setSettings('width', size.width);
+                        $.getScript('//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.6&appId=200817623450198')
+                    });
+                }
+                else {
+                    params['width'] = "100%";
+                }
+                AppsApi.addEventListener(AppsApi.Events.URL_CHANGE, function () {
+                    AppsApi.reloadApp();
+                });
+                break;
+            case 'facebookFollow':
+                layout = params['layout'];
+                var showFaces =  params['showFaces'];
+                if (viewMode === 'designer') {
+                    AppsApi.setAppSize(followButtonSizing(layout,showFaces));
+                }
+                break;
+            case 'facebookLikeBox':
+                var likeBoxHeight = 63;
+                var likeBoxWidth = AppsApi.getQueryParamValue("wzSize").width;
+                if (params['showPosts'] === 'true') {
+                    likeBoxHeight += 332;
+                }
+                if (params['showFaces'] === 'true') {
+                    likeBoxHeight += 180;
+                }
+                if (viewMode === 'designer') {
+                    AppsApi.setAppSize({height: likeBoxHeight, width: likeBoxWidth});
+                }
+                break;
+            case 'facebookPagePlugin':
+                var width = AppsApi.getQueryParamValue("wzSize").width;
+                var height = AppsApi.getQueryParamValue("wzSize").height;
+                AppsApi.setSettings({width: width, height: height});
+                AppsApi.addEventListener('SIZE_CHANGE', function (size) {
+                    AppsApi.setSettings({width: size.width, height: size.height});
+                });
+                break;
+
+        }
+
+        html = html + ' class=' + '"' + widgetData["class"] + '"';
+        for (var i = 0; i < attributes.length; i++) {
+            html = html + ' ' + attributes[i].attr + '="' + params[attributes[i].param] + '"';
+        }
+        html = html + ' ' + 'data-version' + '="' + 'v2.6' + '"';
+        html = html + "></div>";
+        document.write(html);
+
+        if (widgetType === 'facebookPagePlugin') {
+
+        }
+
+        if (widgetType === 'facebookComments' && viewMode !== 'designer') {
+            var lastHeight;
+            window.setInterval(function () {
+                var height = $(document.body).height();
+                if (height > 20 && lastHeight !== height) {
+                    AppsApi.setDocumentSize({height: height});
+                    lastHeight = height;
+                }
+            }, 100);
+        }
+
+
+        if (widgetType === 'facebookLike' && viewMode !== 'designer') {
+            window.setInterval(function () {
+                if (viewMode !== 'designer') {
+                    var $innerIframe = $(".fb_iframe_widget_lift");
+                    if ($innerIframe.height() > 180) {
+                        AppsApi.enableTopPosition();
+                        isExpanded = true;
+                        AppsApi.setAppContentSize({height: $innerIframe.height(), width: $innerIframe.width()})
+                    }
+                    else if (isExpanded) {
+                        AppsApi.disableTopPosition();
+                        isExpanded = false;
+                        AppsApi.setAppContentSize(likeButtonSizing(action, layout, showFaces))
+                    }
+                }
+            }, 100);
+        }
+
+        var size = AppsApi.getQueryParamValue("wzSize");
+        if (size.width !== params["width"]) {
+            AppsApi.setSettings('width', size.width);
+        }
+
+    })();
+
+    function likeButtonSizing(action, layout, showFaces) {
+        var height;
+        var width;
+        switch (layout) {
+            case 'standard':
+                if (showFaces) {
+                    height = 80;
+                }
+                else {
+                    height = 35;
+                }
+                width = 450;
+                break;
+            case 'box_count':
+                height = 65;
+                width = 55;
+                break;
+            case 'button_count':
+                height = 20;
+                width = 90;
+                break;
+            case 'button':
+                height = 20;
+                width = 49;
+                break;
+
+        }
+        if (action === 'recommend') {
+            width += 46;
+        }
+        return {height: height, width: width};
+    }
+
+    function shareButtonSizing(layout) {
+        switch (layout) {
+            case 'box_count':
+                return {height: 65, width: 57};
+            case 'button_count':
+                return {height: 20, width: 90};
+            case 'button':
+                return  {height: 20, width: 57};
+            case 'icon_link':
+                return {height: 20, width: 48};
+            case 'icon':
+                return {height: 14, width: 14};
+            case 'link':
+                return {height: 16, width: 96};
+
+        }
+    }
+
+    function followButtonSizing(layout, showFaces) {
+        switch (layout) {
+            case 'standard':
+                var height;
+                if (showFaces === 'true') {
+                    height = 80;
+                }
+                else {
+                    height = 35;
+                }
+                return {height: height, width: 450};
+            case 'box_count':
+                return {height: 65, width: 64};
+            case 'button_count':
+                return {height: 20, width: 105};
+            case 'button':
+                return {height: 20, width: 64};
+
+        }
+    }
+</script><div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/prefderiodaconceicao" data-show-facepile="true" data-hide-cover="false" data-show-posts="true" data-width="500" data-height="614" data-version="v2.6" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=744137685644053&amp;container_width=500&amp;height=614&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprefderiodaconceicao&amp;locale=en_GB&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;width=500"><span style="vertical-align: bottom; width: 500px; height: 614px;"><iframe name="f3c53cb69f30004" width="500px" height="614px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./page.html" style="border: none; visibility: visible; width: 500px; height: 614px;" class=""></iframe></span></div>
+
+
+</body></html>
